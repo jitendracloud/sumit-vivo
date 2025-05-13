@@ -1,6 +1,7 @@
 let progressBar = document.querySelector(".progress-bar");
 let progressText = document.querySelector(".progress-text");
-let thankYou = document.querySelector(".thank-you");
+let scannerWrapper = document.querySelector(".scanner-wrapper");
+let thankYouScreen = document.querySelector(".thank-you-screen");
 
 let percent = 0;
 let interval = setInterval(() => {
@@ -10,7 +11,9 @@ let interval = setInterval(() => {
 
   if (percent >= 100) {
     clearInterval(interval);
-    progressText.style.display = "none";
-    thankYou.style.display = "block";
+
+    // Hide scanner UI and show thank you screen
+    scannerWrapper.style.display = "none";
+    thankYouScreen.style.display = "flex";
   }
-}, 120); // 120 * 100 = 12000ms = 12 seconds
+}, 250); // 250ms * 100 = 25 seconds
