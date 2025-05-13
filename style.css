@@ -93,7 +93,7 @@ body {
 
   .thank-you-text {
     font-size: 2rem;
-    color: green;
+    color: rgb(151, 4, 65);
     font-weight: bold;
     animation: bounceIn 1.5s ease-out forwards;
   }
